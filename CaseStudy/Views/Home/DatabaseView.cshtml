@@ -1,0 +1,31 @@
+﻿@using System.Net.Mime
+@model List<CaseStudy.ViewModels.ResultDTOs.ApplicantResultsDTO>
+
+@{Layout = "_Layout"; }
+<div style="padding-top: 50px; overflow:auto">
+    <table class="table" sortable="True">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">DOB</th>
+                <th scope="col">Age</th>
+                <th scope="col">Annual Income</th>
+                <th scope="col">Approved Card</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var application in Model)
+            {
+                <tr>
+                    <td>@application.FirstName</td>
+                    <td>@application.LastName</td>
+                    <td>@application.DateOfBirth.Date</td>
+                    <td>@application.Age</td>
+                    <td>@application.AnnualIncome (£)</td>
+                    <td>@application.CreditCardName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

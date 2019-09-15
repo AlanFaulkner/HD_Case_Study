@@ -1,0 +1,17 @@
+﻿@using CaseStudy.DataTransferObjects.ResultsDTOs
+@model CaseStudy.DataTransferObjects.ResultsDTOs.CreditCardResultsDTO
+
+@{Layout = "_Layout"; }
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h1> Your Results</h1>
+
+    <img src="@Model.Image" alt="@Model.CreditCardName" width="300" height="200" />
+
+    <p><strong>@Model.WelcomeMessage</strong>  </p>
+
+    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Return to submission page.</a>
+</div>

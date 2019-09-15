@@ -1,0 +1,44 @@
+﻿@model CaseStudy.DataTransferObjects.ApplicantSummitDTO
+
+@{Layout = "_Layout"; }
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h1>Welcome</h1>
+    <p>
+        Please Complete the following form to determine you eligibility.
+    </p>
+
+    <form asp-action="Index" method="post" role="form">
+
+        <div class="form-group">
+            <label asp-for="FirstName" class="col">First Name</label>
+            <div class="col">
+                <input asp-for="FirstName" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName" class="col">Last Name</label>
+            <div class="col">
+                <input asp-for="LastName" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="DateOfBirth" class="col">Date of Birth</label>
+            <div class="col-md-7">
+                <input asp-for="DateOfBirth" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AnnualIncome" class="col">Annual Income</label>
+            <div class="col-md-7">
+                <input asp-for="AnnualIncome" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-offset-2 col-md-5">
+            <input type="submit" class="btn btn-primary" value="Submit" />
+        </div>
+    </form>
+</div>
