@@ -61,7 +61,7 @@ namespace DomainLogic.Entities
                     CreditCard.BarclayCard());
             if (Age > 18)
                 return new Applicant(this.Id, this.FirstName, this.LastName, this.DateOfBirth, this.AnnualIncome,
-                CreditCard.Vanquish());
+                CreditCard.Vanquis());
 
             return this;
         }

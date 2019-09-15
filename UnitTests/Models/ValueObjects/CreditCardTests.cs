@@ -12,7 +12,7 @@ namespace UnitTests.Models.ValueObjects
         {
             var cardA = CreditCard.BarclayCard();
             var cardB = CreditCard.BarclayCard();
-            var cardC = CreditCard.Vanquish();
+            var cardC = CreditCard.Vanquis();
             Assert.IsTrue(cardA == cardB);
             Assert.IsFalse(cardB == cardC);
         }
@@ -24,7 +24,7 @@ namespace UnitTests.Models.ValueObjects
             {
                 CreditCard.BarclayCard(),
                 CreditCard.BarclayCard(),
-                CreditCard.Vanquish()
+                CreditCard.Vanquis()
             };
 
             Assert.AreEqual(2, list.Distinct().Count());

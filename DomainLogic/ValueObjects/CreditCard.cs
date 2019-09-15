@@ -24,12 +24,12 @@ namespace DomainLogic.ValueObjects
         /// <returns></returns>
         public static CreditCard BarclayCard()
         {
-            return new CreditCard("BarclayCard", 18.6, "images/BarclayCard.jpg", $"You have been approved for a Barclay's Credit Card at 18.6% APR");
+            return new CreditCard("BarclayCard", 18.6, "images/BarclayCard.jpg", $"You have been approved for a Barclay's Credit Card at 12.2% APR");
         }
 
-        public static CreditCard Vanquish()
+        public static CreditCard Vanquis()
         {
-            return new CreditCard("Vanquish", 12.2, "images/Vanquish.jpg", "You have been approved for a Vanquish Credit Card at 12.2% APR");
+            return new CreditCard("Vanquis", 12.2, "images/Vanquis.jpg", "You have been approved for a Vanquis Credit Card at 18.6% APR");
         }
 
         public static CreditCard NotApproved()
